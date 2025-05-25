@@ -1,32 +1,137 @@
 <!DOCTYPE html>
-<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>верный-сервис.kz — Главная</title>
-<style>
-body { font-family: sans-serif; background: #f9fafb; margin: 0; padding: 40px; text-align: center; }
-a { display: block; margin: 10px 0; color: #2563eb; font-weight: bold; text-decoration: none; }
-</style></head><body>
-<h1>верный-сервис.kz</h1>
-<p>Выберите услугу:</p>
-<a href="stiralnye.html">Стиральные машины</a>
-<a href="sushilnye.html">Сушильные машины</a>
-<a href="posudomoechnye.html">Посудомоечные машины</a>
-<a href="varochnye.html">Варочные поверхности</a>
-<a href="duxovye.html">Духовые шкафы</a>
-<a href="mikrovolnovki.html">Микроволновки</a>
-<a href="xolodilniki.html">Холодильники</a>
-<a href="contact.html">Контакты</a>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>верный-сервис.kz — Ремонт бытовой техники</title>
+  <meta name="description" content="Профессиональный ремонт стиральных машин, холодильников, микроволновок, духовых шкафов и другой техники в Алматы.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f3f4f6;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('https://via.placeholder.com/1600x500?text=верный-сервис.kz') no-repeat center center;
+      background-size: cover;
+      padding: 80px 20px;
+      color: white;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+      color: #facc15;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 12px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      width: 280px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #2563eb;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      background: #facc15;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .fixed-menu {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+      z-index: 999;
+    }
+    .fixed-menu a {
+      padding: 12px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .fixed-menu .wa { background: #25d366; }
+    .fixed-menu .call { background: #2563eb; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>верный-сервис.kz</h1>
+    <p>Профессиональный ремонт бытовой техники в Алматы</p>
+    <nav>
+      <a href="#uslugi">Услуги</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+  </header>
 
-<div style="position: fixed; bottom: 20px; right: 20px; z-index: 999; display: flex; gap: 10px;">
-  <a href="https://wa.me/77055600929" target="_blank" title="Написать в WhatsApp"
-     style="background: #25d366; color: white; padding: 12px 16px; border-radius: 50px; text-decoration: none; font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 8px;">
-    <span style="font-size: 18px;">🟢</span> WhatsApp
-  </a>
-  <a href="tel:+77055600929" title="Позвонить"
-     style="background: #2563eb; color: white; padding: 12px 16px; border-radius: 50px; text-decoration: none; font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 8px;">
-    <span style="font-size: 18px;">📞</span> Позвонить
-  </a>
-</div>
+  <div class="container" id="uslugi">
+    <h2 style="text-align:center;">Наши услуги</h2>
+    <div class="grid">
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Стиральные+машины" alt=""><h3>Стиральные машины</h3><a href="stiralnye.html">Подробнее</a></div>
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Сушильные+машины" alt=""><h3>Сушильные машины</h3><a href="sushilnye.html">Подробнее</a></div>
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Посудомоечные+машины" alt=""><h3>Посудомоечные машины</h3><a href="posudomoechnye.html">Подробнее</a></div>
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Варочные+поверхности" alt=""><h3>Варочные поверхности</h3><a href="varochnye.html">Подробнее</a></div>
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Духовые+шкафы" alt=""><h3>Духовые шкафы</h3><a href="duxovye.html">Подробнее</a></div>
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Микроволновки" alt=""><h3>Микроволновки</h3><a href="mikrovolnovki.html">Подробнее</a></div>
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Холодильники" alt=""><h3>Холодильники</h3><a href="xolodilniki.html">Подробнее</a></div>
+    </div>
+  </div>
 
-</body></html>
+  <div class="fixed-menu">
+    <a href="https://wa.me/77055600929" target="_blank" class="wa" title="WhatsApp"><span>🟢</span> WhatsApp</a>
+    <a href="tel:+77055600929" class="call" title="Позвонить"><span>📞</span> Позвонить</a>
+  </div>
+
+  <footer>
+    © 2025 верный-сервис.kz
+  </footer>
+</body>
+</html>

@@ -8,68 +8,77 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Inter', sans-serif;
       margin: 0;
-      background: url('https://via.placeholder.com/1600x1000?text=Ремонт+стиральные+машины+в+Алматы') no-repeat center top;
-      background-size: cover;
+      font-family: 'Inter', sans-serif;
+      background: #f3f4f6;
       color: #333;
     }
-    .overlay {
-      background: rgba(255,255,255,0.95);
-      min-height: 100vh;
-      padding: 40px 20px;
-    }
-    header, footer {
-      text-align: center;
+    header {
       background: #facc15;
-      padding: 20px;
+      padding: 30px;
+      text-align: center;
     }
     .container {
       max-width: 960px;
       margin: auto;
+      padding: 40px 20px;
     }
     img {
       max-width: 100%;
-      border-radius: 12px;
+      border-radius: 10px;
       margin: 20px 0;
     }
     .button {
       display: inline-block;
+      padding: 12px 24px;
       background: #2563eb;
       color: white;
-      padding: 12px 24px;
+      font-weight: bold;
       border-radius: 8px;
       text-decoration: none;
-      font-weight: bold;
     }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #facc15;
+      margin-top: 40px;
+    }
+    .fixed-menu {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+      z-index: 999;
+    }
+    .fixed-menu a {
+      padding: 12px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .fixed-menu .wa { background: #25d366; }
+    .fixed-menu .call { background: #2563eb; }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <header>
-      <h1>Ремонт стиральные машины в Алматы</h1>
-    </header>
-    <div class="container">
-      <h2>Описание услуги</h2>
-      <p>Профессиональный ремонт стиральные машины с выездом мастера и гарантией.</p>
-      <img src="https://via.placeholder.com/800x400?text=Ремонт+стиральные+машины+в+Алматы" alt="Ремонт стиральные машины в Алматы">
-      <p><a href="contact.html" class="button">Оставить заявку</a></p>
-    </div>
-    <footer>© 2025 верный-сервис.kz</footer>
+  <header>
+    <h1>Ремонт стиральные машины в Алматы</h1>
+  </header>
+  <div class="container">
+    <p>Мы профессионально ремонтируем стиральные машины всех брендов. Осуществляем выезд мастера по Алматы и пригородам, используем только проверенные запчасти и даём гарантию на работу.</p>
+    <img src="https://via.placeholder.com/800x400?text=Стиральные+машины" alt="Стиральные машины">
+    <p><a class="button" href="contact.html">Оставить заявку</a></p>
   </div>
-
-<div style="position: fixed; bottom: 20px; right: 20px; z-index: 999; display: flex; gap: 10px;">
-  <a href="https://wa.me/77055600929" target="_blank" title="Написать в WhatsApp"
-     style="background: #25d366; color: white; padding: 12px 16px; border-radius: 50px; text-decoration: none; font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 8px;">
-    <span style="font-size: 18px;">🟢</span> WhatsApp
-  </a>
-  <a href="tel:+77055600929" title="Позвонить"
-     style="background: #2563eb; color: white; padding: 12px 16px; border-radius: 50px; text-decoration: none; font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 8px;">
-    <span style="font-size: 18px;">📞</span> Позвонить
-  </a>
-</div>
-
+  <div class="fixed-menu">
+    <a href="https://wa.me/77055600929" target="_blank" class="wa"><span>🟢</span> WhatsApp</a>
+    <a href="tel:+77055600929" class="call"><span>📞</span> Позвонить</a>
+  </div>
+  <footer>© 2025 верный-сервис.kz</footer>
 </body>
 </html>
